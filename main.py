@@ -1,0 +1,1 @@
+print("Taschenrechner Projekt gestartet")
