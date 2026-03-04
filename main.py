@@ -1,17 +1,23 @@
-# Taschenrechner Projekt gestartet
+# Taschenrechner Projekt 
 
-Zahl1 = float(input("Gib eine Zahl ein!: "))
-op = input('+, -, *, /, : ')
-Zahl2 = float(input("Gib nochmal eine Zahl ein!: "))
+while True:
 
-if op == '+':
-    print(Zahl1 + Zahl2)
-elif op == '-':
-    print(Zahl1 - Zahl2)
-elif op == '*':
-    print(Zahl1 * Zahl2)
-elif op == '/':
-    print(Zahl1 / Zahl2)
+    eingabe = input("Gib eine Zahl ein oder 'exit': ")
 
-else:
-    print("Falsche Eingabe")
+    if eingabe == "exit":
+        break
+
+    Zahl1 = float(eingabe)
+    op = input('+, -, *, /, : ')
+    Zahl2 = float(input("Gib eine zweite Zahl ein!: "))
+
+    if op == '+':
+        print(Zahl1 + Zahl2)
+    elif op == '-':
+        print(Zahl1 - Zahl2)
+    elif op == '*':
+        print(Zahl1 * Zahl2)
+    elif op == '/':
+        print(Zahl1 / Zahl2)
+    else:
+        print("Falsche Eingabe")
